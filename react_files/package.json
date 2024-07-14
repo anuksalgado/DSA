@@ -1,7 +1,7 @@
 {
   "name": "react_files",
   "version": "0.1.0",
-  "homepage": "https://myusername.github.io/DSA",
+  "homepage": "https://myusername.github.io/DSA/react_files/src/App.js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
