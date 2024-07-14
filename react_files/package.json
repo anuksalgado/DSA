@@ -1,7 +1,7 @@
 {
   "name": "react_files",
   "version": "0.1.0",
-  "homepage": "https://myusername.github.io/DSA/react_files/src/App.js",
+  "homepage": "https://myusername.github.io/DSA",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "tailwindcss": "^3.4.4"
   }
 }
