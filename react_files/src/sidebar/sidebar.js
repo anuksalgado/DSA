@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
 
   const toggleDropdown = () => {
-    setDropdownVisible(!isDropdownVisible); //updating the value onclick
+    setDropdownVisible(!isDropdownVisible);
   };
 
   return (
     <div className="h-screen bg-blue-600 w-52">
       <div className="sidebar list-disc text-white text-3xl font-thin text-opacity-75">
         <ul className="space-y-8 pt-5 pl-2">
-          <li><a className="active" href="#home">Home</a></li>
+          <li><Link to="/">Home</Link></li>
           <div className="flex justify-start items-center space-x-2">
-            <li><a href="#news">Introduction</a></li>
+            <li><Link to="/introduction">Introduction</Link></li>
             <button
               type="button"
               onClick={toggleDropdown}
@@ -39,12 +40,12 @@ function Sidebar() {
           </div>
           {isDropdownVisible && (
             <div id="dropdown" className="pl-5 text-lg space-y-4">
-              <li><a className="active" href="#home">Binary search</a></li>
-              <li><a href="#news">Big O notation</a></li>
+              <li><Link to="/binary-search">Binary Search</Link></li>
+              <li><Link to="/big-o-notation">Big O Notation</Link></li>
             </div>
           )}
-          <li><a href="#contact">Sections</a></li>
-          <li><a href="#about">Contact</a></li>
+          <li><Link to="/sections">Sections</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
     </div>

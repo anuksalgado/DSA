@@ -1,16 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Sidebar from './sidebar/sidebar';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Intro from './Pages/Intro';
 
 function App() {
   return (
-    <div className="flex min-h-screen">
-    <Sidebar />
-    <div className="flex-grow p-4">
-      <h1 className="text-7xl text-blue-400">Work in progress</h1>
-    </div>
-  </div>
+    <Router>
+      <div className="flex min-h-screen">
+        <Sidebar />
+        <Routes>
+          <Route exact path="/" element={<Intro />} />
+          <Route path="/introduction" element={<Intro />} />
+          <Route path="/binary-search" element={<Intro />} />
+          <Route path="/big-o-notation" element={<Intro />} />
+          <Route path="/sections" element={<Intro />} />
+          <Route path="/contact" element={<Intro />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
