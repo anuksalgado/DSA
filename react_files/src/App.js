@@ -9,7 +9,7 @@ import {
 import Intro from './Pages/Intro';
 
 function App() {
-  return (
+  return ( //returning component of Sidebar
     <Router>
       <div className="flex min-h-screen">
         <Sidebar />
