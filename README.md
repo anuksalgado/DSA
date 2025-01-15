@@ -15,3 +15,6 @@ This project aims to provide visual and interactive demonstrations of common dat
 ## Features
 - **Code Examples**: Implementation of data structures and algorithms in Java and Python.
 - **User-Friendly Interface**: Easy navigation and clean design.
+
+## Design ideals
+https://www.figma.com/design/QI0NThqCT810XkCxZaaeuB/Untitled?node-id=0-1&t=HGVnn903W5SHTKpH-1 <- Link to figma file for design choices
