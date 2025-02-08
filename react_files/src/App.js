@@ -6,7 +6,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Intro from './Pages/Intro';
+import DefaultLandingPage from './Pages/Intro';
+import Introduction from './Pages/Introduction';
 
 function App() {
   return ( //returning component of Sidebar
@@ -14,12 +15,12 @@ function App() {
       <div className="flex min-h-screen">
         <Sidebar />
         <Routes>
-          <Route exact path="/" element={<Intro />} />
-          <Route path="/introduction" element={<Intro />} />
-          <Route path="/binary-search" element={<Intro />} />
-          <Route path="/big-o-notation" element={<Intro />} />
-          <Route path="/sections" element={<Intro />} />
-          <Route path="/contact" element={<Intro />} />
+          <Route exact path="/" element={<DefaultLandingPage />} />
+          <Route path="/Introduction" element={<Introduction />} />
+          <Route path="/binary-search" element={<DefaultLandingPage />} />
+          <Route path="/big-o-notation" element={<DefaultLandingPage />} />
+          <Route path="/sections" element={<DefaultLandingPage />} />
+          <Route path="/contact" element={<DefaultLandingPage />} />
         </Routes>
       </div>
     </Router>

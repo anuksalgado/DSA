@@ -9,7 +9,7 @@ function Sidebar() {
   };
 
   return (
-    <div className="h-screen bg-blue-600 w-52">
+    <div className="max-height:100% bg-blue-600 w-52">
       <div className="sidebar list-disc text-white text-3xl font-thin text-opacity-75">
         <ul className="space-y-8 pt-5 pl-2">
           <li><Link to="/">Home</Link></li>
