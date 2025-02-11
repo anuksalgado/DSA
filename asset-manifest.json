@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/DSA/static/css/main.27f53f88.css",
-    "main.js": "/DSA/static/js/main.7d6fcba4.js",
-    "static/js/453.92fb8d24.chunk.js": "/DSA/static/js/453.92fb8d24.chunk.js",
-    "static/media/computer.jpg": "/DSA/static/media/computer.d1ff635a064f70e25516.jpg",
-    "index.html": "/DSA/index.html",
-    "main.27f53f88.css.map": "/DSA/static/css/main.27f53f88.css.map",
-    "main.7d6fcba4.js.map": "/DSA/static/js/main.7d6fcba4.js.map",
-    "453.92fb8d24.chunk.js.map": "/DSA/static/js/453.92fb8d24.chunk.js.map"
+    "main.css": "/DSA/home/static/css/main.cd30e813.css",
+    "main.js": "/DSA/home/static/js/main.fcd16d0a.js",
+    "static/js/453.92fb8d24.chunk.js": "/DSA/home/static/js/453.92fb8d24.chunk.js",
+    "static/media/computer.jpg": "/DSA/home/static/media/computer.d1ff635a064f70e25516.jpg",
+    "static/media/algorithmDesign.png": "/DSA/home/static/media/algorithmDesign.aeb5606e89a97e191686.png",
+    "static/media/DataHuman.png": "/DSA/home/static/media/DataHuman.d17c64f93faffc3248aa.png",
+    "static/media/Question.png": "/DSA/home/static/media/Question.2c857eaf0b5f0c9ae315.png",
+    "index.html": "/DSA/home/index.html",
+    "main.cd30e813.css.map": "/DSA/home/static/css/main.cd30e813.css.map",
+    "main.fcd16d0a.js.map": "/DSA/home/static/js/main.fcd16d0a.js.map",
+    "453.92fb8d24.chunk.js.map": "/DSA/home/static/js/453.92fb8d24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27f53f88.css",
-    "static/js/main.7d6fcba4.js"
+    "static/css/main.cd30e813.css",
+    "static/js/main.fcd16d0a.js"
   ]
 }
