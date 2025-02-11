@@ -16,7 +16,8 @@ function App() {
       <div className="flex min-h-screen">
         <Sidebar />
         <Routes>
-          <Route exact path="/Home" element={<Home />} />
+          <Route exact path="/DSA" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/Introduction" element={<Introduction />} />
           <Route path="/binary-search" element={<DefaultLandingPage />} />
           <Route path="/big-o-notation" element={<DefaultLandingPage />} />

@@ -22,7 +22,7 @@ const Introduction = () => {
                 <li>Linked lists</li>
             </ol>
             <br></br>
-            <p>It is important that this list is followed as is,atleast by learning of Arrays first before anything, as they form the basis of everything in Data structures and even algorithms!</p>
+            <p>It is important that this list is followed as is,atleast by the learning of arrays first before anything, as arrays form the basis of everything in Data structures and even algorithms!</p>
 
             </div>
 
