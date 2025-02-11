@@ -12,9 +12,9 @@ function Sidebar() {
     <div className="max-height:100% bg-blue-600 w-52">
       <div className="sidebar list-disc text-white text-3xl font-thin text-opacity-75">
         <ul className="space-y-8 pt-5 pl-2">
-          <li><Link to="/DSA/Home">Home</Link></li>
+          <li><Link to="/Home">Home</Link></li>
           <div className="flex justify-start items-center space-x-2">
-            <li><Link to="/DSA/introduction">Introduction</Link></li>
+            <li><Link to="/introduction">Introduction</Link></li>
             <button
               type="button"
               onClick={toggleDropdown}
