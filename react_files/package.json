@@ -1,25 +1,26 @@
 {
   "name": "react_files",
   "version": "0.1.0",
-  "homepage": "https://myusername.github.io/DSA",
+  "homepage": "https://myusername.github.io/DSA/home",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "nth-check": ">=2.0.1",
+    "postcss": ">=8.4.31",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
+    "reactjs-popup": "^2.0.6",
     "styled-components": "^6.1.12",
-    "web-vitals": "^2.1.4",
-    "nth-check": ">=2.0.1",
-    "postcss": ">=8.4.31"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "BROWSER='safari' react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

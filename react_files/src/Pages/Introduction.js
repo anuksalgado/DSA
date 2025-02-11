@@ -1,89 +1,53 @@
-import React, { useState } from "react";
-import computerImage from "../../src/images/computer.jpg"
+import React from 'react';
+import dataHuman from "../../src/images/DataHuman.png"
+import algorithmDesign from "../../src/images/algorithmDesign.png"
+import ButtonPopUp from "../buttonPopUp/buttonPopUp";
 
 const Introduction = () => {
-    const [isDropdownVisible, setDropdownVisible] = useState(false);
-    
-      const toggleDropdown = () => {
-        setDropdownVisible(!isDropdownVisible);
-      };
+    return(
+        <div class="py-10">
+            <div id="DSDiv" class="px-4">
+            <h1 class="font-roboto text-2xl">What are Data structures </h1>
+            <p>A Data structure is a way of effectively storing data and organising it. There are multiple structures which can be used for these very purposes!</p>
 
-      const [isDropdownVisible1, setDropdownVisible1] = useState(false);
-    
-      const toggleDropdown1 = () => {
-        setDropdownVisible1(!isDropdownVisible1);
-      };
-    
+            <div class="py-5 flex items-center justify-between">
+                <img src={dataHuman} className="h-50 w-100" alt="Computer" />
+                <ButtonPopUp text="It is quite important to start off with data structures before going into algorithms" /> 
+            </div>
 
-    return (
-        <div>
-          <div class="py-5 flex items-center justify-center">
-            <img src={computerImage} class="h-auto max-w-xl" alt="Computer"></img>
-          </div>
+            <p>Some common and important Data structures include</p>
+            <ol class="list-decimal px-10">
+                <li>Arrays</li>
+                <li>Stacks and Queues</li>
+                <li>Linked lists</li>
+            </ol>
+            <br></br>
+            <p>It is important that this list is followed as is,atleast by learning of Arrays first before anything, as they form the basis of everything in Data structures and even algorithms!</p>
 
-          <div class="px-10 py-8 font-roboto text-lg">
-            <div  class="bg-slate-300 rounded-2xl ">
-              <h1 class="px-5 py-5">
-                    Welcome to DSA4Beginners! This would be your one-stop destination in order to start mastering Data structures and algorithms. This page helps not only beginners, but also experienced programmers who would like to brush up on their knowledge. <br/>
-                    The main aim of this website is to teach the core concepts of DSA and is a fun personal project for me to brush up on my own DSA skills whilst making a website for it!
-                </h1>
-              </div>
-              
-              
-              <br></br>
-              <div class="bg-slate-300 rounded-2xl">
-                <h1 class="px-5 py-5">
-                  <div class="text-xl underline">
-                  The purpose
-                  </div>
-                    Data Structures and Algorithms form the very foundations of Computing in any form be it Software Engineering, Computer Science, IT or any other fields which require computing to an extent. 
+            </div>
 
-                    They help to write efficient code, solve complex problems and are often quizzed in technical interviews. My goal is to simplify these concepts with clear explanations, examples and materials whcih i used personally. 
-                </h1>
-              </div>
-              
+            <br></br>
 
-              <br></br>
+            <div id="AlgoDiv" class="px-4">
+            <h1 class="font-roboto text-2xl">What are Algorithms?</h1>
+            <p>An algorithm is a step-by-step approach in solving a problem. Algorithms are used for any and all forms of problems but in our case, we use algorithms to manipulate data structures to perform specific operations as efficiently as possible [Link to the Big O slide]</p>
 
-              <div  class="bg-slate-300 rounded-2xl ">
-                <div class="px-5 py-5">
-                  <div class="text-xl underline">
-                  What you will learn <br></br>
-                  </div>
-                  <div class="px-5">
-                    <ol class="list-decimal">
-                      <li onClick={toggleDropdown} class="cursor-pointer w-fit">Data Structures ...
-                        {isDropdownVisible && (
-                                    <ul id="dropDown1" class="list-disc px-8">
-                                    <li>Arrays</li>
-                                    <li>Linked Lists</li>
-                                    <li>Stacks</li>
-                                    <li>Queues</li>
-                                    <li>Trees</li>
-                                    <li>Graphs</li>
-                                    <li>Hash Tables</li>
-                                  </ul>
-                                  )}
-                      </li>
-                      <li onClick={toggleDropdown1} class="cursor-pointer w-fit">Algorithms ...
-                      {isDropdownVisible1 && (
-                        <ul class="list-disc px-8">
-                          <li>Sorting</li>
-                          <li>Searching</li>
-                          <li>Recursion</li>
-                        </ul>)}
-                        </li>
+            <div class="py-5">
+                <img src={algorithmDesign} class="h-50 w-100 justify-left" alt="Algorithm"></img>
+            </div>
 
-                      <li>Real World Applications</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-              
+            <p>Some common and important Algorithms include</p>
+            <ol class="list-decimal px-10">
+                <li>Trees</li>
+                <li>Graphs</li>
+                <li>Hash Tables</li>
+            </ol>
+            <br></br>
+            <p>There are more algorithms such as Advanced trees but the above cover the most important ones.</p>
 
-          </div>
+            </div>  
         </div>
-    );
+      )
 };
 
 export default Introduction;
