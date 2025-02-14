@@ -3,9 +3,13 @@ import { useState } from "react";
 
 function Contact() {
   const [captchaValue, setCaptchaValue] = useState(null);
+  //captchaValue stored the reCaptcha verification token
+  // setCaptchaValue updates captcha state
+  //initially set to null
 
   function handleCaptcha(value) {
     setCaptchaValue(value);
+    //function called when user competes with captcha, value contains google verification token if user passes. updates captchaValue above when done
   }
 
   return (
@@ -57,9 +61,9 @@ function Contact() {
         
         <button
           className={`bg-emerald-500 w-20 rounded-3xl border-blue-500 py-2 mt-6 hover:bg-emerald-600 text-white font-roboto motion-safe:animate-bounce ${
-            !captchaValue ? "opacity-50 cursor-not-allowed" : ""
+            !captchaValue ? "opacity-50 cursor-not-allowed" : "" // !captchaValue means captcha is not completed if null
           }`}
-          disabled={!captchaValue}
+          disabled={!captchaValue} //prevents submission if captcha is not submitted
         >
           Submit!
         </button>
