@@ -6,9 +6,10 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import DefaultLandingPage from './Pages/Intro';
-import Introduction from './Pages/Introduction';
+import DefaultLandingPage from './Pages/Intro'
+import Introduction from './Pages/Introduction'
 import Home from './Pages/Home'
+import Contact from './Pages/Contact'
 
 function App() {
   return ( //returning component of Sidebar
@@ -22,7 +23,7 @@ function App() {
           <Route path="/binary-search" element={<DefaultLandingPage />} />
           <Route path="/big-o-notation" element={<DefaultLandingPage />} />
           <Route path="/sections" element={<DefaultLandingPage />} />
-          <Route path="/contact" element={<DefaultLandingPage />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
