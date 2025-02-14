@@ -1,5 +1,6 @@
 import ReCAPTCHA from "react-google-recaptcha";
 import { useState } from "react";
+import React, { useRef } from 'react';
 
 function Contact() {
   const [captchaValue, setCaptchaValue] = useState(null);
@@ -12,6 +13,32 @@ function Contact() {
     //function called when user competes with captcha, value contains google verification token if user passes. updates captchaValue above when done
   }
 
+  const captchaRef = useRef(null)
+  //const token = captchaRef.current.getValue();
+
+  //console.log("Logged");
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+
+    const token = captchaRef.current?.getValue(); // Get reCAPTCHA token
+    console.log("CAPTCHA Token:", token);
+
+    if (!token) {
+      alert("Please complete the CAPTCHA!");
+      return;
+    }
+
+    console.log("Hello")
+    console.log(captchaRef.current.getValue())
+
+    captchaRef.current?.reset(); // Reset the reCAPTCHA
+    setCaptchaValue(null); // Clear captcha state after reset
+
+    alert("Form submitted successfully!");
+  };
+
+
+
   return (
     <div className="flex-grow p-4">
       <div className="mt-3">
@@ -22,7 +49,7 @@ function Contact() {
 
       <br />
       <div>
-        <form>
+        <form  onSubmit={handleSubmit}>
           <label>First Name:</label>
           <br />
           <input
@@ -57,14 +84,14 @@ function Contact() {
       </div>
 
       <div className="flex flex-col items-center mt-4">
-        <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY} onChange={handleCaptcha} />
+        <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY} onChange={handleCaptcha} ref={captchaRef} />
         
         <button
           className={`bg-emerald-500 w-20 rounded-3xl border-blue-500 py-2 mt-6 hover:bg-emerald-600 text-white font-roboto motion-safe:animate-bounce ${
             !captchaValue ? "opacity-50 cursor-not-allowed" : "" // !captchaValue means captcha is not completed if null
           }`}
           disabled={!captchaValue} //prevents submission if captcha is not submitted
-        >
+         >
           Submit!
         </button>
       </div>
