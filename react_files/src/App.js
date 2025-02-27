@@ -14,8 +14,8 @@ import Contact from './Pages/Contact'
 import {isMobile} from 'react-device-detect';
 import { Fade } from "react-awesome-reveal";
 
-{/*Credit to - https://github.com/awesome-reveal/react-awesome-reveal for the react animation*/}
-
+// eslint-disable-next-line
+{/*Credit to - https://github.com/awesome-reveal/react-awesome-reveal for the react animation*/} 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return ( //returning component of Sidebar
@@ -44,7 +44,9 @@ function App() {
           <Route exact path="/DSA" element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Introduction" element={<Introduction />} />
-          <Route path="/binary-search" element={<DefaultLandingPage />} />
+          <Route path="/data-structures" element={<DefaultLandingPage />} />
+          <Route path="/algorithms" element={<DefaultLandingPage />} />
+          <Route path="/sorting-algorithms" element={<DefaultLandingPage />} />
           <Route path="/big-o-notation" element={<DefaultLandingPage />} />
           <Route path="/sections" element={<DefaultLandingPage />} />
           <Route path="/contact" element={<Contact />} />

@@ -11,7 +11,7 @@ export default function ButtonPopUp({ text }) {
                     <img src={Question} className="w-12 h-12" alt="Question" />
                 </button>
             } position="left center">  {/* opens to the left */}
-                <div className="p-2 bg-white border border-gray-300 rounded shadow-md">
+                <div className="p-2 bg-white border border-gray-300 rounded shadow-md animate-pulse">
                     <p className="text-sm">{text}</p> 
                 </div>
             </Popup>

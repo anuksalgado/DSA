@@ -2,6 +2,7 @@ import React from 'react';
 import dataHuman from "../../src/images/DataHuman.png"
 import algorithmDesign from "../../src/images/algorithmDesign.png"
 import ButtonPopUp from "../buttonPopUp/buttonPopUp";
+import jumbledNumbers from "../../src/images/JumbledNumbers.png"
 
 const Introduction = () => {
     return(
@@ -27,6 +28,7 @@ const Introduction = () => {
             </div>
 
             <br></br>
+            <br></br>
 
             <div id="AlgoDiv" class="px-4">
             <h1 class="font-roboto text-2xl">What are Algorithms?</h1>
@@ -45,7 +47,36 @@ const Introduction = () => {
             <br></br>
             <p>There are more algorithms such as Advanced trees but the above cover the most important ones.</p>
 
-            </div>  
+            </div>
+            
+            <br></br>
+            <br></br>
+            <div id="AlgoDiv" class="px-4">
+            <h1 class="font-roboto text-2xl">Some Sorting algorithms</h1>
+            <p>There are multiple sorting algorithms which are crucial for understanding how the usage of loops in these algorithms and their techniques affect Big O notation. </p>  
+            <br></br>
+            <img src={jumbledNumbers} className='h-16' alt='jumbled numbers'></img>
+            <br></br>
+            <div>
+            <p>Some basic sorting algorithms are:</p>
+
+            
+            <div className="flex justify-between items-center w-full px-10">
+                <ol className="list-decimal">
+                    < li>Selection Sort</li>
+                    <li>Bubble Sort</li>
+                    <li>Insertion Sort</li>
+                </ol>
+                <ButtonPopUp className="ml-auto" text="There are plenty of algorithms which you can learn about which would be more advanced. But these give a good understanding of the basics." /> 
+            </div>
+            </div>
+
+            
+
+            
+            <br></br>
+
+            </div>
         </div>
       )
 };

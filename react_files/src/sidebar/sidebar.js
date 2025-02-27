@@ -10,7 +10,7 @@ function Sidebar() {
 
   return (
     <div className="w-52">
-      <div className="fixed top-0 left-0 h-full bg-blue-600 w-52 overflow-y-auto">
+      <div className="fixed top-0 left-0 border-r-4 border-blue-900 h-full bg-gradient-to-t from-violet-200 via-violet-600 to-blue-600 w-52 overflow-y-auto">
         {/* Added overflow-y-auto */}
         <ul className="space-y-8 pt-5 pl-2 list-disc text-white text-3xl font-thin text-opacity-75">
           <li><Link to="/Home">Home</Link></li>
@@ -41,7 +41,9 @@ function Sidebar() {
           </div>
           {isDropdownVisible && (
             <div id="dropdown" className="pl-5 text-lg space-y-4">
-              <li><Link to="/binary-search">Binary Search</Link></li>
+              <li><Link to="/data-structures">Data structures</Link></li>
+              <li><Link to="/algorithms">Algorithms</Link></li>
+              <li><Link to="/sorting-algorithms">Sorting Algorithms</Link></li>
               <li><Link to="/big-o-notation">Big O Notation</Link></li>
             </div>
           )}
