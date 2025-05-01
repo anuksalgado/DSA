@@ -13,6 +13,7 @@ import Contact from './Pages/Contact'
 
 import {isMobile} from 'react-device-detect';
 import { Fade } from "react-awesome-reveal";
+import DataStructure from './Pages/DataStructure'
 
 // eslint-disable-next-line
 {/*Credit to - https://github.com/awesome-reveal/react-awesome-reveal for the react animation*/} 
@@ -50,6 +51,8 @@ function App() {
           <Route path="/DSA/big-o-notation" element={<DefaultLandingPage />} />
           <Route path="/DSA/sections" element={<DefaultLandingPage />} />
           <Route path="/DSA/contact" element={<Contact />} />
+          <Route path="/DSA/Introduction/data-structures" element={<DataStructure />} />
+          
         </Routes>
       </div>
     </Router>

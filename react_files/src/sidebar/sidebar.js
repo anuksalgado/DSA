@@ -13,9 +13,9 @@ function Sidebar() {
       <div className="fixed top-0 left-0 border-r-4 border-blue-900 h-full bg-gradient-to-t from-violet-200 via-violet-600 to-blue-600 w-52 overflow-y-auto">
         {/* Added overflow-y-auto */}
         <ul className="space-y-8 pt-5 pl-2 list-disc text-white text-3xl font-thin text-opacity-75">
-          <li><Link to="/Home">Home</Link></li>
+          <li><Link to="/DSA/Home">Home</Link></li>
           <div className="flex justify-start items-center space-x-2">
-            <li><Link to="/introduction">Introduction</Link></li>
+            <li><Link to="/DSA/introduction">Introduction</Link></li>
             <button
               type="button"
               onClick={toggleDropdown}
@@ -41,14 +41,14 @@ function Sidebar() {
           </div>
           {isDropdownVisible && (
             <div id="dropdown" className="pl-5 text-lg space-y-4">
-              <li><Link to="/data-structures">Data structures</Link></li>
+              <li><Link to="/DSA/introduction/data-structures">Data structures</Link></li>
               <li><Link to="/algorithms">Algorithms</Link></li>
               <li><Link to="/sorting-algorithms">Sorting Algorithms</Link></li>
               <li><Link to="/big-o-notation">Big O Notation</Link></li>
             </div>
           )}
-          <li><Link to="/sections">Sections</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/DSA/sections">Sections</Link></li>
+          <li><Link to="/DSA/contact">Contact</Link></li>
         </ul>
       </div>
     </div>
