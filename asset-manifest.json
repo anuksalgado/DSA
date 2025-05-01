@@ -1,20 +1,24 @@
 {
   "files": {
     "main.css": "/DSA/static/css/main.3e8b0e04.css",
-    "main.js": "/DSA/static/js/main.e5e87646.js",
+    "main.js": "/DSA/static/js/main.a4e8eaa9.js",
     "static/js/453.92fb8d24.chunk.js": "/DSA/static/js/453.92fb8d24.chunk.js",
     "static/media/computer.jpg": "/DSA/static/media/computer.d1ff635a064f70e25516.jpg",
     "static/media/algorithmDesign.png": "/DSA/static/media/algorithmDesign.aeb5606e89a97e191686.png",
     "static/media/DataHuman.png": "/DSA/static/media/DataHuman.d17c64f93faffc3248aa.png",
     "static/media/JumbledNumbers.png": "/DSA/static/media/JumbledNumbers.4c2f253cb2c3f501372e.png",
     "static/media/Question.png": "/DSA/static/media/Question.2c857eaf0b5f0c9ae315.png",
+    "static/media/Array.png": "/DSA/static/media/Array.bfc84258d5dbb56d439e.png",
+    "static/media/Stack4.png": "/DSA/static/media/Stack4.e920d42d40e0598e4f93.png",
+    "static/media/Stack3.png": "/DSA/static/media/Stack3.b8e0f1e182bd9ec49554.png",
+    "static/media/Stack1.png": "/DSA/static/media/Stack1.795d2f247bb98bf74c2e.png",
     "index.html": "/DSA/index.html",
     "main.3e8b0e04.css.map": "/DSA/static/css/main.3e8b0e04.css.map",
-    "main.e5e87646.js.map": "/DSA/static/js/main.e5e87646.js.map",
+    "main.a4e8eaa9.js.map": "/DSA/static/js/main.a4e8eaa9.js.map",
     "453.92fb8d24.chunk.js.map": "/DSA/static/js/453.92fb8d24.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3e8b0e04.css",
-    "static/js/main.e5e87646.js"
+    "static/js/main.a4e8eaa9.js"
   ]
 }
