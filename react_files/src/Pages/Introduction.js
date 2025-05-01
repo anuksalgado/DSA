@@ -69,11 +69,7 @@ const Introduction = () => {
                 </ol>
                 <ButtonPopUp className="ml-auto" text="There are plenty of algorithms which you can learn about which would be more advanced. But these give a good understanding of the basics." /> 
             </div>
-            </div>
-
-            
-
-            
+            </div>       
             <br></br>
 
             </div>

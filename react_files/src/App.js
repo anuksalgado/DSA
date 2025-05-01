@@ -42,14 +42,14 @@ function App() {
       )}
         <Routes>
           <Route exact path="/DSA" element={<Home />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Introduction" element={<Introduction />} />
-          <Route path="/data-structures" element={<DefaultLandingPage />} />
-          <Route path="/algorithms" element={<DefaultLandingPage />} />
-          <Route path="/sorting-algorithms" element={<DefaultLandingPage />} />
-          <Route path="/big-o-notation" element={<DefaultLandingPage />} />
-          <Route path="/sections" element={<DefaultLandingPage />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/DSA/Home" element={<Home />} />
+          <Route path="/DSA/Introduction" element={<Introduction />} />
+          <Route path="/DSA/data-structures" element={<DefaultLandingPage />} />
+          <Route path="/DSA/algorithms" element={<DefaultLandingPage />} />
+          <Route path="/DSA/sorting-algorithms" element={<DefaultLandingPage />} />
+          <Route path="/DSA/big-o-notation" element={<DefaultLandingPage />} />
+          <Route path="/DSA/sections" element={<DefaultLandingPage />} />
+          <Route path="/DSA/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
