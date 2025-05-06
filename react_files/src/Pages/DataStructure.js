@@ -14,6 +14,7 @@ function DataStructure() {
                 <div id="DSDiv" class="px-4">
                   <h1 class="font-roboto text-2xl">Arrays </h1>
                   <p>Arrays can be thought of holding a set amount of values with a single data type. The length is usually determined during the initialisation of the array and this remains fixed. </p>
+                  <p>Arrays are a great way to learn about multiple forms of Algorithms. </p>
 
                   <img src={arrayImage} className="h-50 w-100" alt="Computer" />
                   <p>As we can see from above, arrays usually start with the index position of 0. This has to do with index being used as an offset against memory location. If that confuses you, just remember, the first element of an array starts at index position 0 for almost all programming languages!</p>
